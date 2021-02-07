@@ -10,18 +10,17 @@ import UIKit
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - IB Outlets
-    @IBOutlet var userNameTextField: UITextField!
+    @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
     // MARK: - Private Properties
-    private let userName = "Donald"
-    private let password = "MAGA2020"
+    private let profile = Profile.getSampleProfile()
     
     // MARK: - Life Cycles Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        userNameTextField.delegate = self
+        
+        loginTextField.delegate = self
     }
     
     // MARK: - Override Methods
@@ -38,7 +37,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         for viewController in tabBarViewControllers {
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.userName = userName
+                welcomeVC.userName = profile.person.name
             }
         }
         
@@ -48,15 +47,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func forgotButtonPressed(_ sender: UIButton) {
         switch sender.tag {
         case 0: showAlarmWith(title: "Oops!",
-                              message: "Your name is \(userName)  🧐")
+                              message: "Your login is \(profile.login)  🧐")
         case 1: showAlarmWith(title: "Oops!",
-                              message: "Your password is \(password)  🧐")
+                              message: "Your password is \(profile.password)  🧐")
         default: break
         }
     }
     
     @IBAction func logInButtonPressed() {
-        if userNameTextField.text != userName || passwordTextField.text != password {
+        if loginTextField.text != profile.login || passwordTextField.text != profile.password {
             passwordTextField.text = nil
             showAlarmWith(title: "Invalid login or password",
                           message: "Please, enter correct login and password")
@@ -67,13 +66,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func unwind(segue: UIStoryboardSegue) {
-        userNameTextField.text = nil
+        loginTextField.text = nil
         passwordTextField.text = nil
     }
     
     // MARK: - TextFieldDelegate Method
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == userNameTextField {
+        if textField == loginTextField {
             passwordTextField.becomeFirstResponder()
         }
         return true

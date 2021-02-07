@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FoS-8A-pbr">
                                 <rect key="frame" x="48" y="135" width="224" height="98"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4L3-SM-J5W">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4L3-SM-J5W">
                                         <rect key="frame" x="0.0" y="0.0" width="224" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="username"/>
@@ -84,8 +84,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginTextField" destination="4L3-SM-J5W" id="UDm-gW-ynk"/>
                         <outlet property="passwordTextField" destination="8L9-C8-9rJ" id="yoc-OP-0Ti"/>
-                        <outlet property="userNameTextField" destination="4L3-SM-J5W" id="UDm-gW-ynk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -149,6 +149,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RZ5-0q-3mX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ivJ-QF-bff">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
