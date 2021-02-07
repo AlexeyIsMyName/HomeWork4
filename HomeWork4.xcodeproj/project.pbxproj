@@ -14,6 +14,7 @@
 		E7884F9125D00BE80042E10B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7884F8F25D00BE80042E10B /* Main.storyboard */; };
 		E7884F9625D00C0D0042E10B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7884F9425D00C0D0042E10B /* LoginViewController.swift */; };
 		E7884F9A25D00C480042E10B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7884F9925D00C480042E10B /* WelcomeViewController.swift */; };
+		E7884FA925D0488E0042E10B /* PersonalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7884FA825D0488E0042E10B /* PersonalInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E7884F9025D00BE80042E10B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7884F9425D00C0D0042E10B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E7884F9925D00C480042E10B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E7884FA825D0488E0042E10B /* PersonalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		E7884FA525D020B00042E10B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E7884FA825D0488E0042E10B /* PersonalInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				E7884F9625D00C0D0042E10B /* LoginViewController.swift in Sources */,
 				E7884F9A25D00C480042E10B /* WelcomeViewController.swift in Sources */,
 				E7884F7725D00AFF0042E10B /* AppDelegate.swift in Sources */,
+				E7884FA925D0488E0042E10B /* PersonalInfo.swift in Sources */,
 				E7884F7925D00AFF0042E10B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -33,8 +33,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userName = userName
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let tabBarViewControllers = tabBarController.viewControllers else { return }
+        
+        for viewController in tabBarViewControllers {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.userName = userName
+            }
+        }
+        
     }
     
     // MARK: - IB Actions
