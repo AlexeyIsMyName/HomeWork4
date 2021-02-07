@@ -58,16 +58,56 @@
 		E7884F7525D00AFF0042E10B /* HomeWork4 */ = {
 			isa = PBXGroup;
 			children = (
-				E7884F7625D00AFF0042E10B /* AppDelegate.swift */,
-				E7884F9425D00C0D0042E10B /* LoginViewController.swift */,
-				E7884F9925D00C480042E10B /* WelcomeViewController.swift */,
-				E7884F7825D00AFF0042E10B /* SceneDelegate.swift */,
-				E7884F7F25D00B000042E10B /* Assets.xcassets */,
-				E7884F8F25D00BE80042E10B /* Main.storyboard */,
-				E7884F8125D00B000042E10B /* LaunchScreen.storyboard */,
-				E7884F8425D00B000042E10B /* Info.plist */,
+				E7884F9D25D01F880042E10B /* ViewControllers */,
+				E7884FA525D020B00042E10B /* Models */,
+				E7884F9F25D01FB10042E10B /* Storyboards */,
+				E7884FA025D01FEE0042E10B /* SupportingFiles */,
+				E7884FA225D0201B0042E10B /* Resources */,
 			);
 			path = HomeWork4;
+			sourceTree = "<group>";
+		};
+		E7884F9D25D01F880042E10B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E7884F9425D00C0D0042E10B /* LoginViewController.swift */,
+				E7884F9925D00C480042E10B /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E7884F9F25D01FB10042E10B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E7884F8F25D00BE80042E10B /* Main.storyboard */,
+				E7884F8125D00B000042E10B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E7884FA025D01FEE0042E10B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E7884F7625D00AFF0042E10B /* AppDelegate.swift */,
+				E7884F7825D00AFF0042E10B /* SceneDelegate.swift */,
+				E7884F8425D00B000042E10B /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E7884FA225D0201B0042E10B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7884F7F25D00B000042E10B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E7884FA525D020B00042E10B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZG8HC24927;
-				INFOPLIST_FILE = HomeWork4/Info.plist;
+				INFOPLIST_FILE = HomeWork4/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZG8HC24927;
-				INFOPLIST_FILE = HomeWork4/Info.plist;
+				INFOPLIST_FILE = HomeWork4/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
