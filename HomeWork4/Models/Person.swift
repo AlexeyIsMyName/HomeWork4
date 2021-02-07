@@ -7,7 +7,7 @@
 
 struct Person {
     let name: String
-    let surname: String
+    let surName: String
     
     let image: PersonImage?
     
@@ -17,7 +17,7 @@ struct Person {
 extension Person {
     static func getSamplePerson() -> Person {
         Person(name: "Donald",
-               surname: "Trump",
+               surName: "Trump",
                image: PersonImage.getSampleImage(),
                personalDetail: PersonalDetail.getSamplePersonalDetail())
     }

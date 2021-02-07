@@ -17,18 +17,30 @@ struct PersonalDetail {
     }
     
     let details: [DetailType: String]
+    
+    func getDetail(of type: DetailType) -> String? {
+        switch type {
+        case .born: return details[.born]
+        case .wife: return details[.wife]
+        case .children: return details[.children]
+        case .parents: return details[.parents]
+        case .occupation: return details[.occupation]
+        case .work: return details[.work]
+        case .webSite: return details[.webSite]
+        }
+    }
 }
 
 extension PersonalDetail {
     static func getSamplePersonalDetail() -> PersonalDetail {
         PersonalDetail(details: [
-            .born: "01",
-            .wife: "02",
-            .children: "03",
-            .parents: "04",
-            .occupation: "05",
-            .work: "06",
-            .webSite: "07"
+            .born: "June 14, 1946, Queens, New York City",
+            .wife: "Melania Knauss",
+            .children: "Donald Jr., Ivanka, Eric, Tiffany, Barron",
+            .parents: "Fred Trump, Mary Anne MacLeod",
+            .occupation: "Politician, businessman, television presenter, author",
+            .work: "45th President of the United States",
+            .webSite: "trumpwhitehouse.archives.gov"
         ])
     }
 }

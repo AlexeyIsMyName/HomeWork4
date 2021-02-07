@@ -18,6 +18,8 @@
 		E7884FAD25D04A920042E10B /* PersonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7884FAC25D04A920042E10B /* PersonImage.swift */; };
 		E7884FB025D04B650042E10B /* PersonalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7884FAF25D04B650042E10B /* PersonalDetail.swift */; };
 		E7884FB325D04E1A0042E10B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7884FB225D04E1A0042E10B /* Profile.swift */; };
+		E7884FB725D07FB70042E10B /* ImageProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7884FB625D07FB70042E10B /* ImageProfileViewController.swift */; };
+		E7884FBA25D083EE0042E10B /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7884FB925D083EE0042E10B /* PersonalDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		E7884FAC25D04A920042E10B /* PersonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonImage.swift; sourceTree = "<group>"; };
 		E7884FAF25D04B650042E10B /* PersonalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetail.swift; sourceTree = "<group>"; };
 		E7884FB225D04E1A0042E10B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		E7884FB625D07FB70042E10B /* ImageProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProfileViewController.swift; sourceTree = "<group>"; };
+		E7884FB925D083EE0042E10B /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			children = (
 				E7884F9425D00C0D0042E10B /* LoginViewController.swift */,
 				E7884F9925D00C480042E10B /* WelcomeViewController.swift */,
+				E7884FB625D07FB70042E10B /* ImageProfileViewController.swift */,
+				E7884FB925D083EE0042E10B /* PersonalDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -193,6 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7884F9625D00C0D0042E10B /* LoginViewController.swift in Sources */,
+				E7884FBA25D083EE0042E10B /* PersonalDetailsViewController.swift in Sources */,
+				E7884FB725D07FB70042E10B /* ImageProfileViewController.swift in Sources */,
 				E7884FB325D04E1A0042E10B /* Profile.swift in Sources */,
 				E7884F9A25D00C480042E10B /* WelcomeViewController.swift in Sources */,
 				E7884FAD25D04A920042E10B /* PersonImage.swift in Sources */,

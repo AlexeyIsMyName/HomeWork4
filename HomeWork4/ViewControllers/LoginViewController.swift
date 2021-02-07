@@ -37,10 +37,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         for viewController in tabBarViewControllers {
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.userName = profile.person.name
+                welcomeVC.fullName = profile.person.name + " " + profile.person.surName
+            } else if let imageProfileVC = viewController as? ImageProfileViewController {
+                imageProfileVC.personImage = profile.person.image
+            } else if let personalDetailsVC = viewController as? PersonalDetailsViewController {
+                personalDetailsVC.personName = profile.person.name
+                personalDetailsVC.personSurname = profile.person.surName
+                personalDetailsVC.personalDetail = profile.person.personalDetail
             }
         }
-        
     }
     
     // MARK: - IB Actions
