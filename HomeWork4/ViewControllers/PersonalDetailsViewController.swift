@@ -15,7 +15,7 @@ class PersonalDetailsViewController: UIViewController {
     @IBOutlet var fullNameOfWife: UILabel!
     @IBOutlet var childrenNamesLabel: UILabel!
     @IBOutlet var parentsNamesLabel: UILabel!
-    @IBOutlet var ocupationLabel: UILabel!
+    @IBOutlet var occupationLabel: UILabel!
     @IBOutlet var workLabel: UILabel!
     @IBOutlet var webSiteLinkLabel: UILabel!
     
@@ -33,7 +33,7 @@ class PersonalDetailsViewController: UIViewController {
         fullNameOfWife.text = personalDetail.getDetail(of: .wife)
         childrenNamesLabel.text = personalDetail.getDetail(of: .children)
         parentsNamesLabel.text = personalDetail.getDetail(of: .parents)
-        ocupationLabel.text = personalDetail.getDetail(of: .occupation)
+        occupationLabel.text = personalDetail.getDetail(of: .occupation)
         workLabel.text = personalDetail.getDetail(of: .work)
         webSiteLinkLabel.text = personalDetail.getDetail(of: .webSite)
     }

@@ -340,7 +340,7 @@
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ocupation Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRn-C9-Oza">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Occupation Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRn-C9-Oza" userLabel="Occupation Label">
                                                 <rect key="frame" x="88" y="0.0" width="200" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -439,7 +439,7 @@
                         <outlet property="childrenNamesLabel" destination="euw-Ud-SPl" id="UL5-jW-3bU"/>
                         <outlet property="fullNameOfWife" destination="ivA-cZ-PQk" id="EiX-BL-SUk"/>
                         <outlet property="nameLabel" destination="hNT-SG-nIJ" id="CHv-jR-jxZ"/>
-                        <outlet property="ocupationLabel" destination="BRn-C9-Oza" id="a5K-58-R2H"/>
+                        <outlet property="occupationLabel" destination="BRn-C9-Oza" id="a5K-58-R2H"/>
                         <outlet property="parentsNamesLabel" destination="cGb-4v-mqG" id="oOR-HQ-KwY"/>
                         <outlet property="surNameLabel" destination="FfK-rT-fAC" id="xVd-3u-7p0"/>
                         <outlet property="webSiteLinkLabel" destination="ed8-67-E1b" id="EeY-kT-6yr"/>
